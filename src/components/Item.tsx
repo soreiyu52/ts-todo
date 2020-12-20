@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import { Task } from '../data/TaskDto';
+import { Task } from '../data/TaskDto'
 
 // propsで渡されるデータを宣言
 type Props = {
-    id: string
-    content: string
+    task: Task
     deleteTodo: (id: string) => void
 }
 
-const Item: React.FC<Props> = ({ id, content, deleteTodo }) => {
+const Item: React.FC<Props> = ({ task, deleteTodo }) => {
     const [isDone, setIsDone] = useState(false)
 
     const handleDelete = () => {
-        deleteTodo(id)
+        deleteTodo(task.id)
     }
 
     return (
@@ -24,7 +23,7 @@ const Item: React.FC<Props> = ({ id, content, deleteTodo }) => {
             <span
                 style={{ textDecoration: isDone ? 'line-through' : 'none' }}
             >
-                {content}
+                {task.content}
             </span>
             <button onClick={handleDelete}>削除</button>
         </li>

@@ -14,8 +14,7 @@ const List: React.FC<Props> = ({ tasks, deleteTodo }) => {
             {tasks.map(task => (
                 <Item
                     key={task.id}
-                    id={task.id}
-                    content={task.content}
+                    task={task}
                     deleteTodo={deleteTodo}
                 />
             ))}
