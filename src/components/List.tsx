@@ -1,14 +1,14 @@
 import Item from './Item';
-import { Task } from '../data/TaskDto'
+import { TodoProps } from '../data/TodoPropsDto';
+import { Task } from '../data/TaskDto';
 
-// propsで渡されるデータを宣言
-type Props = {
-    tasks: Task[]
-    deleteTodo: (id: string) => void
+// TOdoPropsを継承してList用のPropsを作成
+interface ListProps extends TodoProps {
+    tasks: Task[];
 }
 
 // Listコンポーネント
-const List: React.FC<Props> = ({ tasks, deleteTodo }) => {
+const List: React.FC<ListProps> = ({ tasks, deleteTodo }) => {
     return (
         <ul>
             {tasks.map(task => (

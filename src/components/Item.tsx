@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { Task } from '../data/TaskDto'
+import { TodoProps } from '../data/TodoPropsDto';
+import { Task } from '../data/TaskDto';
 
-// propsで渡されるデータを宣言
-type Props = {
-    task: Task
-    deleteTodo: (id: string) => void
+// TOdoPropsを継承してList用のPropsを作成
+interface ItemProps extends TodoProps {
+    task: Task;
 }
 
-const Item: React.FC<Props> = ({ task, deleteTodo }) => {
-    const [isDone, setIsDone] = useState(false)
+const Item: React.FC<ItemProps> = ({ task, deleteTodo }) => {
+    const [isDone, setIsDone] = useState(false);
 
+    // delete時に実行する関数
     const handleDelete = () => {
-        deleteTodo(task.id)
+        deleteTodo(task.id);
     }
 
     return (

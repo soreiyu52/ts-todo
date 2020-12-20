@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Form from './components/Form';
 import List from './components/List';
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 import { Task } from './data/TaskDto';
 
 // init
-const initDate: Task[] = []
+const initDate: Task[] = [];
 
 // Appコンポーネント
 const App = () => {
@@ -19,12 +19,12 @@ const App = () => {
         id: nanoid(),
         content : content
       }
-    ])
+    ]);
   }
 
   // Todoの削除用関数
   const deleteTodo = (id: string) => {
-    setTasks(tasks.filter(task => task.id !== id))
+    setTasks(tasks.filter(task => task.id !== id));
   }
 
   return (

@@ -3,7 +3,7 @@ import { Task } from "../data/TaskDto";
 
 // propsで渡されるデータを宣言
 type Props = {
-    addTodo: (content: string) => void 
+    addTodo: (content: string) => void;
 }
 
 // Formコンポーネント

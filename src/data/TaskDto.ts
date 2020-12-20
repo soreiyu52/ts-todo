@@ -1,5 +1,5 @@
 // Taskのデータオブジェクト
 export type Task = {
-    id: string
-    content: string
+    id: string;
+    content: string;
 }
