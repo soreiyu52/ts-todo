@@ -16,4 +16,6 @@ SampleコードをTypeScriptに直したもの。
 6. [DTOって？](http://e-words.jp/w/DTO.html#:~:text=DTO%E3%81%A8%E3%81%AF%E3%80%81%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8C%87%E5%90%91,%E6%B8%A1%E3%81%99%E9%9A%9B%E3%81%AB%E7%94%A8%E3%81%84%E3%82%89%E3%82%8C%E3%82%8B%E3%80%82)
 7. [TypeScriptにおけるGeneric(ジェネリック)](https://qiita.com/k-penguin-sato/items/9baa959e8919157afcd4)
 8. [TypeScriptのInterfaceとTypeの比較](https://qiita.com/tkrkt/items/d01b96363e58a7df830e)
-9. [TypeScriptで継承したinterfaceのプロパティを一部上書きする方法](https://tech-1natsu.hatenablog.com/entry/2019/02/09/014218)
+9. [Typescriptのinterfaceの使い方](https://qiita.com/nogson/items/86b47ee6947f505f6a7b)
+  1. 付録 [TypeScriptで継承したinterfaceのプロパティを一部上書きする方法](https://tech-1natsu.hatenablog.com/entry/2019/02/09/014218)
+10. [オブジェクト指向とは](https://eng-entrance.com/what-oop)
