@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Task } from '../data/TaskDto';
 
 // propsで渡されるデータを宣言
 type Props = {
