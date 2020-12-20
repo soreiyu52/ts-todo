@@ -1,0 +1,36 @@
+@startuml
+title Todoアプリの関係図
+
+interface Task {
+    String id
+    String content
+}
+
+interface TodoProps {
+    + deleteTodo()
+}
+
+interface ItemProps {
+    task = Task
+}
+
+interface ListProps {
+    tasks = Task[]
+}
+
+class App {}
+class Form {}
+class List {}
+class Item {}
+
+ItemProps --> TodoProps 
+ListProps --> TodoProps
+ItemProps --- Task
+ListProps --- Task
+List --- ListProps
+Item ---- List
+Item --- ItemProps
+App --- List
+App --- Form
+
+@enduml
